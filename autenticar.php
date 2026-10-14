@@ -1,5 +1,6 @@
 <?php
 // autenticar.php verifica se o e-mail e senha informados estão corretos!
+session_start();
  
 include("conexao.php"); //recebe o email e a senha digitados no formulário de login
 $email = $_POST['email'];
@@ -26,3 +27,4 @@ if ($usuarios && password_verify($senha, $usuario['senha'])) {
     header("Location: login.php?erro=login");
     exit();
 }
+   
