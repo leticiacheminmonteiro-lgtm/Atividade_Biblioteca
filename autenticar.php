@@ -19,7 +19,7 @@ $usuario = mysqli_fetch_assoc($resultado);
 // VERIFICAÇÃO DA SENHA
 // ==============================================
  
-if ($usuarios && password_verify($senha, $usuario['senha'])) {
+if ($usuario && password_verify($senha, $usuario['senha'])) {
     $_SESSION['nome'] = $usuario['nome'];
     header("Location: painel.php");
     exit();
