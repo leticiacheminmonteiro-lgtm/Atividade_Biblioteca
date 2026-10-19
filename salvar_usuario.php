@@ -6,7 +6,7 @@
 // de E-mail duplicado.
 
 // Inclui o arquivo de conexão com o banco de dados.
-Include('conexao.php');
+include('conexao.php');
 
 // Recebe os dados enviados pelo formulário via metodo POST.
 $nome = $_POST ['nome'];

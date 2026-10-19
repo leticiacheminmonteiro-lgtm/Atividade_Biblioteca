@@ -20,7 +20,7 @@ include("verificar_sessao.php");
     <div class="container">
         <!-- Exibe o nome do usuário logado (vem da sessão $_SESSION) -->
         <h1>Olá, <?php echo $_SESSION['nome']; ?></h1>
-        <p>class="subtitulo">Bem-vindo ao painel da
+        <p class="subtitulo">Bem-vindo ao painel da
             biblioteca. Escolha uma opção: </p>
         <!-- Cards grandes para facilitar a navegação -->
         <div class="painel-cards">

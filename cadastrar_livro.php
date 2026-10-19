@@ -7,6 +7,7 @@ include("verificar_sessao.php");
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,16 +21,16 @@ include("verificar_sessao.php");
         <p class="subtitulo">Preencha os dados do novo livro.</p>
 
         <!-- Formulário envia os dados para salvar_livro.php-->
-         <form action="salvar_livro.php" method="POST">
+        <form action="salvar_livro.php" method="POST">
             <div class="form-group">
                 <label for="titulo">Titulo</label>
                 <input type="text" id="autor" name="titulo"
-                        placeholder="Digite o título do livro"required>         >
+                    placeholder="Digite o título do livro" required> 
             </div>
             <div class="form-group">
                 <label for="autor">Autor</label>
                 <input type="text" id="autor" name="autor"
-                            placeholder="Digite o nome do autor do livro" required>
+                    placeholder="Digite o nome do autor do livro" required>
             </div>
             <div class="form-group">
                 <label for="status">Status</label>
@@ -39,15 +40,15 @@ include("verificar_sessao.php");
                     <option value="Emprestado">Emprestado</option>
                 </select>
             </div>
-            <button type="submit"> class="btn btn-block btn-sucesso">
+            <button type="submit" class="btn btn-block btn-sucesso">
                 Salvar Livro
             </button>
-         </form>
-         
-<!-- Botão de voltar para o painel principal -->
-<a href="painel.php" class="btn btn-voltar">
-    Voltar para o Painel.
-</a>
+        </form>
+
+        <!-- Botão de voltar para o painel principal -->
+        <a href="painel.php" class="btn btn-voltar">
+            Voltar para o Painel.
+        </a>
     </div>
 </body>
 
