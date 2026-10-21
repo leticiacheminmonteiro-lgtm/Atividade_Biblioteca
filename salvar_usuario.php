@@ -30,7 +30,7 @@ if (mysqli_num_rows($resultadoVerificar) > 0) {
 // Nunca armazenamos a senha em texto puro no banco
 // ===============================================================
 // password_hash() gera um hash seguro da senha
-// PASSWORD_DEFAULT usa um algoritimo bcrypt (padrão PHP)
+// PASSWORD_DEFAULT usa um algoritimo bcrypt (padrão PHP)                               
 $senhaCriptografada = password_hash($senha, PASSWORD_DEFAULT);
 
 //================================================================
